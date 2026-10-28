@@ -2,7 +2,7 @@
 
 A free, no-sign-up investment calculator for **Intrigue Real Estate & Property Management**, built for rental property investors in the Indianapolis area. Enter a property's price, financing and rent to see cap rate, cash flow, equity and a full 30-year projection, then send the deal to an Intrigue agent.
 
-**Live site:** _add deployment URL_
+**Live site:** https://vincenzohashiro.github.io/Rental-Property-Investment-Calculator/ (GitHub Pages)
 
 ## Running it
 
@@ -42,7 +42,7 @@ The test suite checks all 20 figures from the assessment's validation table, plu
 - **Field config instead of repeated HTML.** There are 35 inputs (including 7 utility and 10 miscellaneous lines). Defining each once in `fields.js` keeps labels, help text and units consistent.
 - **Projection table orientation.** Metrics are rows and years are columns, with the label column pinned. On phones the table defaults to key years (1 to 5, then every 5) with a switch for all 30. Utility and other-expense rows only appear when they have a value.
 - **Chart.js 4.4.1 from cdnjs.** The only external script. If it fails to load, the page shows a note and the table still has every figure.
-- **Contact form.** Validates name, email, phone (10 to 15 digits), address and message, with inline errors linked to each field. On Netlify it submits to Netlify Forms; elsewhere there is no backend, so it validates and shows the confirmation without sending. The current deal numbers and a share link are attached in a hidden field.
+- **Contact form.** Validates name, email, phone (10 to 15 digits), address and message, with inline errors linked to each field. The live site is on GitHub Pages, which has no backend, so the form validates and shows the confirmation without sending anything (the brief makes a backend optional). The form is already marked up for Netlify Forms, so deploying the same files to Netlify would make submissions real with no code changes. The current deal numbers and a share link are attached in a hidden field.
 
 ### Bonus features included
 
